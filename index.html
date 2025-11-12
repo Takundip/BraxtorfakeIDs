@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braxtor FakeIDs - Shop your new identity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">
+                    <img src="images/logob.jpg" alt="Fashion Store Logo" class="logo-image" onerror="this.style.display='none'">
+                    <h1>Braxtor FakeIDs</h1>
+                </a>
+                <nav class="nav">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#products" class="nav-link">Products</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="cart-btn" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Discover Your new Identity</h2>
+            <p>Shop the best fakes and discover freedom</p>
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <div class="about-story">
+                        <p class="lead">Since 2009, Braxtor fakeIDs has been at the forefront of fake ID innovation, bringing timeless elegant and non stop revolution to NOVELTY IDs in all states in the US and even across EUROPE..</p>
+                        
+                        <p>We make high quality scannable fake ids and replicate every security detail. Our fakes are correctly formatted with magnetic stripes, 1D / 2Q bar codes, and scan the same as a real license. Braxtor fakeIDs is well known on campuses everywhere as "The Chinese guy"..</p>
+                        
+                        <p>Largest selection of fake ids. All templates have been designed by Braxtor Fakeids to be of absolute identical quality to the real id. Please scroll  and see the close up images of our featured fakes. Rest assured your fake id will pass in-state and nobody, but you, will know it is a fake id. We make Fake ID the best!.</p>
+                        
+                        <p> Braxtor FakeIDs has grown over time into the most reliable and professional fake id maker online comprised of the best team of dedicated designers.
+First time customers can read about us in the news </p>
+                        
+                        <p class="closing">Join us on this journey of good, quality, and timeless elegant fakes. Welcome to Braxtor fakeIDs where identity meets freedom, and every fake tells a story.</p>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>HOLOGRAPHIC OVERLAYS</h3>
+                        <p>We use traditional multispec sticker overlays like all other similar vendors. They are not heatsealed.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>DISCREET SHIPPING</h3>
+                        <p>All orders are shipped discreetly from within the United States via USPS First Class Mail. There are no markings indicating the nature of the package.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>HIGH QUALITY PRINTING</h3>
+                        <p>Every single one of our IDs is printed on Teslin using high quality photo printer technology. Impressive stuff right?</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>UPDATED TEMPLATES</h3>
+                        <p>We have up-to-date digital templates of the base pattern, the hologram, the microtext, and the barcode to ensure a truly high quality replica of a genuine ID.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-options" id="cartOptions" style="display: none;">
+                <h4>Select payment method *</h4>
+                <div class="option-group">
+                    <label class="option-item">
+                        <input type="radio" name="cartOption" value="CashApp" required>
+                        <span class="option-label">CashApp</span>
+                    </label>
+                    <label class="option-item">
+                        <input type="radio" name="cartOption" value="Apple Pay" required>
+                        <span class="option-label">Apple Pay</span>
+                    </label>
+                    <label class="option-item">
+                        <input type="radio" name="cartOption" value="Crypto currencies(BTC, USDT, or ETH)" required>
+                        <span class="option-label">Crypto currencies(BTC, USDT, or ETH)</span>
+                    </label>
+                </div>
+            </div>
+            <div class="cart-total">
+                <strong>Total: $<span id="cartTotal">0.00</span></strong>
+            </div>
+            <button class="btn btn-primary checkout-btn" id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Braxtor FakeIDs</h4>
+                    <p>Your one-stop shop for the best fakes.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@fashionstore.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Braxtor FakeIDs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
